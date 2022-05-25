@@ -2,8 +2,7 @@
 Trabajo final de Griselda Benitez 👋
 
 #Disponible en: 💻
-<a href="https://jemi14.github.io/TPO-DW/" target="_blank"> https://jemi14.github.io/TPO-DW/S <\a>
-
+<a href="https://jemi14.github.io/TPO-DW/" target="_blank"> https://jemi14.github.io/TPO-DW/ 
 
 #Sobre el trabajo: ☕️
 
