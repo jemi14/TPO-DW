@@ -1,0 +1,617 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	box-sizing: border-box;
+	font-family: oswald, sans-serif;
+}
+
+html 
+{
+	font-size: 62.5%;
+	size: 62.5%;
+}
+
+/* /////////////Grid-Layout(mobilefirst)/////////// */
+
+.contenedor--displaygrid{
+	display:grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: "botonera" "encabezado" "main" "pie";
+}
+
+.botonera{
+	grid-area: botonera;
+}
+
+.encabezado{
+	grid-area: encabezado;
+}
+
+.main{
+	grid-area: main;
+}
+
+.pie{
+	grid-area: pie;
+}
+/* ////////////////////////////////////////////////// */
+
+/*--------------Diseño De Nav y banner--------------*/
+
+.header{
+margin-bottom:-0.3rem;
+}
+
+.nav {
+	background-color: #EBDEF0;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: -0.3rem;
+}
+
+.nav__logo--size {
+	width: 20rem;
+	height: 5rem;
+	margin: 1rem auto 0 auto;
+}
+
+.nav__ul {
+	display: flex;
+}
+
+.nav__ul li {
+	list-style: none;
+	margin: 1rem 2.5rem;
+}
+
+.nav__ul li a {
+	text-decoration: none;
+	color: #000;
+	font-size: 1.8rem;
+	font-weight: 600;
+}
+
+.nav__ul li a:hover {
+	color: rgb(171, 145, 145);
+	transition: 0.7s;
+}
+
+.header__banner--width {
+	width: 100%;
+	height: auto;
+}
+/*--------------Imagen de Fondo--------------*/
+
+body {
+	background-image: url(../img/mosaiko.jpg);
+}
+
+/*--------------INDEX--------------*/
+
+main {
+	background: #EBDEF0;
+	padding-bottom: 2.5rem;
+}
+
+
+.section {
+	width: 90%;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/*---------------------------historia.............................. */
+
+.section__historia {
+	text-align: center;
+	font-weight:600;
+	font-size: 2.5rem;
+	color:#000;
+}
+
+.section-historia--flex{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.section__historia--paddingtexto {
+	padding-bottom: 2.5rem;
+}
+
+/* -------------------------VELAS, Inicio--------------------------------------- */
+
+.velas {
+	text-align: center;
+	font-weight:600;
+	font-size: 1.8rem; 
+}
+
+.velas__texto {
+	margin-bottom: 2.5rem;
+}
+
+.velas__img--margin {
+	margin-right: auto;
+	margin-left:auto;
+}
+
+.velas__imgs--flex {
+	display: flex;
+	flex-flow: row wrap;
+	align-content: center;
+	justify-content: center;
+}
+
+/* ACA se agrego la rotación al hacer hover, rota 360 grados en 3 segundos*/
+.velas__img--size {
+	width: 27rem;
+	height: auto;
+	border-radius: 0.8rem;
+	box-shadow: 0.5rem 0.8rem 1.2rem #000;
+	margin: 0.4rem 0.4rem;
+	transition: transform 3s ease-in-out;
+}
+
+
+.velas__img--size:hover{
+	transform: rotate(360deg);
+  }
+
+/* ------------------------------------PRODUCTOS-------------------------------- */
+
+.producto__banner{
+	width:100%;
+	height: auto;
+}
+
+.animacion__txt{
+	animation-duration: 3s;
+	animation-name: slidein;
+}
+
+.producto {
+	width:90%;
+	height: auto;
+	margin:auto;
+	font-size: 2.5rem;
+	font-weight: 600;
+}
+
+.producto__txt {
+	background: #ADADAD
+}
+
+.producto__h1 {
+	text-align: center;
+	font-size: 4.5rem;
+}
+
+.producto__producto-a--textaling {
+	text-align: center;
+	padding-bottom: 2rem;
+}
+
+.producto__textos {
+	margin-bottom: 1.5rem;
+	text-align: center;
+}
+
+.productoa__img {
+	margin-left: 0.4rem 0.4rem;
+	width:27rem;
+	height: auto;
+	border-radius: 0.5rem;
+	box-shadow: 0.5rem 0.8rem 1.2rem #000;
+	margin: 0.4rem 0.4rem;
+}
+
+.producto__img{
+	display: flex;
+	flex-flow: row wrap;
+	align-content: center;
+	justify-content: center;
+}
+
+.productob {
+	text-align: center;
+}
+
+/* ------------------AROMA------------------ */
+.aroma {
+	width:90%;
+	height: auto;
+	margin:auto;
+	font-size: 2.4rem;
+	font-weight: 600;
+
+}
+
+.aroma h1 {
+	padding-top: 2.5rem;
+	text-align: center;
+}
+
+.aroma__texto {
+	padding-top: 2rem;
+}
+
+.aroma__lista {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background:#c4aaba;
+	border-radius: 2rem;
+	margin-bottom: 1rem;
+}
+
+ul.circulo {list-style-type: circle;}
+
+.aroma-div {
+	display: flex;
+	flex-flow: row wrap;
+	align-content: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.aroma-div__img {
+	width: 40rem;
+	height: auto;
+	margin: 1rem 1rem;
+	border-radius: 0.5rem;
+	box-shadow: 0.5rem 0.8rem 1.2rem #000;
+}
+
+.aroma__textos {
+	margin-bottom: 1.5rem;
+	text-align: center;
+}
+
+/* --------------------MAYORISTA--------------- */
+ h1 {
+ 	font-size:2.4rem ;
+ 	text-align: center;
+ 	padding-top:2.5rem;
+ 	padding-bottom:3rem;
+ }
+.mayorista {
+	font-size: 2rem;
+	width: 95%;
+	margin-right: auto;
+	margin-left:auto;
+	height:auto;
+}
+
+.mayorista__card {
+	background:#c4aaba;
+	border-radius: 5rem;
+	margin-bottom: 2.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.mayorista-card--text {
+	text-align: left;
+	align-items: center;
+	color: #000
+}
+
+.mayorista__card-img {
+	width: 27rem;
+	height:auto;
+	border-radius:50%;
+	margin: 2rem 2rem;
+}
+
+.mayorista__card-2{
+	background: #c4aaba;
+	border-radius: 5rem;
+	margin-bottom: 2.5rem;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.mayorista__card-2-img {
+	width: 27rem;
+	height:auto;
+	border-radius:50%;
+	margin: 2rem 2rem;
+}
+
+.mayorista-card--text2 {
+	text-align: left;
+	align-items: center;
+	color: #000;
+	margin-left:3.5rem;
+}
+
+.mayorista__card-3 {
+	background: #c4aaba;
+	border-radius: 5rem;
+	margin-bottom: 2.5rem;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.mayorista__card-3-img {
+	width: 27rem;
+	height:50%;
+	border-radius:36.0rem;
+	margin: 2rem 2rem;
+}
+
+.mayorista-card--text3 {
+	text-align: left;
+	align-items: center;
+	color: #000;
+	margin-left:3.5rem;
+}
+
+.mayorista__textos {
+	margin-bottom: 1.5rem;
+	text-align: center;
+}
+
+/* --------CONTACTANOS-------------- */
+
+.contactanos {
+	width: 100%;
+	height: auto;
+	font-size: 1.8rem;
+	text-align: center;
+}
+
+.contactanos__div {
+	width: 90%;
+	height: auto;
+	background: #c4aaba;
+	border-radius:1rem;
+	color: #000;
+	margin-bottom: 2.5rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.flex__container{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact__img {
+	margin:auto;
+	width: 30rem;
+	height: auto;
+
+}
+
+.form__input{
+	width: 50rem;
+	height: 5rem;
+	margin: 1rem 0;
+	border:none;
+	border-bottom: 0.3rem solid rgb(240,69,69);
+	background: transparent;
+	color: #fff;
+	font-weight: bold;
+}
+
+.form__input:focus{
+	background: linear-gradient(to bottom, transparent, #222);
+	outline:none;
+	border-bottom: 0.3rem solid rgb(240,135,135);
+}
+.form__input1{
+	width: 30rem;
+	height: 5rem;
+	margin: 1rem 0;
+	border:none;
+	background: rgb(240,69,69);
+	font-weight: bold;
+	color:#fff;
+}
+
+.form__input1:hover{
+	background: rgb(240,55,55);
+	transition: 0.5s;
+}
+
+.textarea{
+	min-width: 30rem;
+	min-height: 30rem;
+	resize: none;
+}
+
+
+
+.mapa {
+	width: 90%;
+	height: auto;
+	background: #393939;
+	border-radius:1rem;
+	margin: 2.5rem 50rem 2.5rem 50rem;
+	color: #ffffff;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+iframe{
+	border-radius: 0.5rem;
+	margin:1rem 1rem;
+	width: 50rem;
+	height: 50rem;
+
+}
+
+/*--------------Contacto---------------*/
+
+
+/*--------------Diseño Footer---------------*/
+.footer {
+	background: #EBDEF0;
+	text-align: center;
+	width:100%;
+	padding: 3rem;
+}
+
+.footer img {
+	width: 5rem;
+	height: auto;
+	padding-top: 1rem;
+}
+
+.footer__img--padding {
+	margin-left: 2.5rem;
+	margin-right: 2.5rem;
+}
+
+.footer__texto--color {
+	color: #000;
+	font-size:1.5;
+	font-weight: 500;
+}
+
+.footer__imgs--flex{
+	display: flex;
+	justify-content: center;
+}
+
+/*/////////////////////////////MediaQuery////////////////////////////////////////////////////////////*/
+
+@media only screen and (min-width: 768px) {
+	/* Nav */
+	.contenedor--displaygrid{
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		grid-template-areas: "botonera botonera" "encabezado encabezado" "main main" "pie pie";
+	}
+
+	/* Velas, inicio */
+	.velas__img--size{
+		width: 33rem;
+		height:auto;
+	}
+	/* productos */
+	.productoa__img{
+		width: 31rem;
+		height:auto;
+	}
+	.productob__img{
+		width: 31rem;
+		height:auto;
+	}
+	/* aroma */
+	.aroma-div__img{
+		width:50rem;
+		height: auto;
+	}
+
+	/* mayorista */
+
+	.mayorista__card{
+		flex-direction: row;
+	}
+
+	.mayorista__card-2{
+		flex-direction: row;
+	}
+	.mayorista__card-3{
+		flex-direction: row;
+	}
+
+	.mayorista__card-img{
+		width: 35rem;
+		height: auto;
+	}
+	.mayorista__card-2-img{
+		width: 35rem;
+		height: auto;
+	}
+	.mayorista__card-3-img{
+		width: 35rem;
+		height: auto;
+	}
+
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+	.contenedor--displaygrid{
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: auto;
+		grid-template-areas: "botonera botonera botonera" "encabezado encabezado encabezado" "main main main" "pie pie pie";
+	}
+
+	.nav{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.nav__ul li {
+		margin-right: 5rem;
+	}
+
+	.nav__logo--size {
+    	margin: 1rem 7.2rem;
+    }
+		/*Velas, inicio  */
+	.velas__img--size{
+		width: 50rem;
+		height:auto;
+	}
+
+		/* Productos */
+	.productoa__img{
+		width: 51rem;
+		height:auto;
+	}
+	.productob__img{
+		width: 51rem;
+		height:auto;
+	}
+
+	/* aroma */
+	.aroma-div{
+		flex-direction: row;
+	}
+
+	/* Contactanos */
+
+	.contactanos__div{
+		width: 60%;
+		height:auto;
+	}
+
+	.mapa{
+		width: 60%;
+		height:auto;
+	}
+
+@media only screen and (min-width: 1621px) {
+	.productoa__img{
+		width: 70rem;
+		height:auto;
+	}
+	.productob__img{
+		width: 70rem;
+		height:auto;
+	}
+}
+
+}
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////// */

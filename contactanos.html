@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nina - Contactanos </title>
+	  <link rel="stylesheet" href="">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body class="contenedor--displaygrid">	
+      <!------- Navbar------->
+	    <nav class="nav botonera">
+      		<a href="index.html">
+       	 	<img src="img/logo.png" alt="nina logo" class="nav__logo--size">
+      		</a>
+			  <ul class="nav__ul">
+				<li><a href="index.html">Inicio</i> </a></li>
+				<li><a href="productos.html">Productos</a></li>
+				<li><a href="aroma.html">Aroma</a></li>
+				<li><a href="mayorista.html">Mayorista</a></li>
+				<li><a href="contactanos.html">Contacto</a></li>
+			 </ul>
+    </nav>
+ <!-------------- Contenido ------------->
+<main class="main">
+              
+   	<section class="contactanos">
+   		<h1> Contactanos </h1>
+
+
+		
+
+
+	 	<article class="contactanos__div ">
+			<div class="flex__container">
+				<form class="needs-validation" novalidate>
+					<div class="form-row">
+
+					  <div class="col-md-4 mb-3">
+						<label for="validationCustom01">Nombre y apellido</label>
+						<input type="text" class="form-control" id="validationCustom01" placeholder="Tu nombre..."  required>
+						<div class="valid-feedback">
+						  Nombre y apellido correcto!!!
+						</div>
+						<div class="invalid-feedback">
+							Debe completar su nombre completo :(
+						</div>
+					  </div>
+					  <div class="col-md-4 mb-3">
+						<label for="validationCustom02">Asunto</label>
+						<input type="text" class="form-control" id="validationCustom02" placeholder="Asunto: ..."  required>
+						<div class="valid-feedback">
+							Asunto correcto!!!
+						</div>
+						<div class="invalid-feedback">
+							Debe decirnos su asunto :(
+						</div>
+					  </div>
+
+					  <div class="col-md-4 mb-3">
+						<label for="exampleFormControlInput1">Email</label>
+						<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Tu e-mail..." required>
+					   </div>
+					   <div class="valid-feedback">
+						E-mail correcto!!!
+					   </div>
+					   
+					</div>
+					
+					<div class="form-group">
+					  <div class="form-check">
+						<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+						<label class="form-check-label" for="invalidCheck">
+						  Está seguro que quiere mandarnos su información?
+						</label>
+						<div class="invalid-feedback">
+						  Verifique la información por favor!!!
+						</div>
+					  </div>
+					</div>
+					<button class="btn btn-primary" type="submit">Enviar e-mail</button>
+				  </form>
+				  
+				  <!-- Agrego la validacón de campos de boostrap-->
+				  <script>
+				  
+				  (function() {
+					'use strict';
+					window.addEventListener('load', function() {
+					  
+					  var forms = document.getElementsByClassName('needs-validation');
+					  
+					  var validation = Array.prototype.filter.call(forms, function(form) {
+						form.addEventListener('submit', function(event) {
+						  if (form.checkValidity() === false) {
+							event.preventDefault();
+							event.stopPropagation();
+						  }
+						  form.classList.add('was-validated');
+						}, false);
+					  });
+					}, false);
+				  })();
+				  </script>
+			</div>
+			
+		</article>
+	
+		
+    </section>
+</main>
+	<!-- Pie de pagina -->
+	<footer class="footer pie">
+		<div class="footer__imgs--flex">
+		   <a href="https://www.facebook.com" target=_blank> <img src="img/facebook-brands.svg" alt="instagram"> </a>
+		   <a href="https://instagram.com" target=_blank> <img src="img/instagram-brands.svg" alt="instagram"> </a>
+		   <a href="https://twitter.com" target=_blank> <img src="img/twitter-brands.svg" alt="instagram"> </a>
+		</div>
+		<h4 class="footer__texto--color">Nina Velas página ficticio creado por la alumna Griselda Benítez.</h4>	
+	  </footer>
+
+	     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
