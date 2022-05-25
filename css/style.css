@@ -211,7 +211,14 @@ main {
 	border-radius: 0.5rem;
 	box-shadow: 0.5rem 0.8rem 1.2rem #000;
 	margin: 0.4rem 0.4rem;
+	transition: transform 3s ease-in-out;
 }
+
+
+.productoa__img:hover{
+	transform: rotate(360deg);
+  }
+
 
 .producto__img{
 	display: flex;
@@ -268,7 +275,13 @@ ul.circulo {list-style-type: circle;}
 	margin: 1rem 1rem;
 	border-radius: 0.5rem;
 	box-shadow: 0.5rem 0.8rem 1.2rem #000;
+	transition: transform 3s ease-in-out;
 }
+
+
+.aroma-div__img:hover{
+	transform: rotate(360deg);
+  }
 
 .aroma__textos {
 	margin-bottom: 1.5rem;
@@ -310,7 +323,13 @@ ul.circulo {list-style-type: circle;}
 	height:auto;
 	border-radius:50%;
 	margin: 2rem 2rem;
+	transition: transform 3s ease-in-out;
 }
+
+
+.mayorista__card-img:hover{
+	transform: rotate(360deg);
+  }
 
 .mayorista__card-2{
 	background: #c4aaba;
@@ -326,7 +345,14 @@ ul.circulo {list-style-type: circle;}
 	height:auto;
 	border-radius:50%;
 	margin: 2rem 2rem;
+	transition: transform 3s ease-in-out;
 }
+
+
+.mayorista__card-2-img:hover{
+	transform: rotate(360deg);
+  }
+
 
 .mayorista-card--text2 {
 	text-align: left;
@@ -349,7 +375,14 @@ ul.circulo {list-style-type: circle;}
 	height:50%;
 	border-radius:36.0rem;
 	margin: 2rem 2rem;
+	transition: transform 3s ease-in-out;
 }
+
+
+.mayorista__card-3-img:hover{
+	transform: rotate(360deg);
+  }
+
 
 .mayorista-card--text3 {
 	text-align: left;
